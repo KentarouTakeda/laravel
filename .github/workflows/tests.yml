@@ -16,13 +16,13 @@ jobs:
       matrix:
         node:
           - 18
-        php: [8.2]
+        php: [8.2, 8.3]
         os:
           - "ubuntu-22.04"
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
