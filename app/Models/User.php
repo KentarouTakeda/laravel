@@ -22,9 +22,9 @@ use Laravel\Sanctum\HasApiTokens;
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Laravel\Sanctum\PersonalAccessToken> $tokens
  * @method static \Database\Factories\UserFactory factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder|User newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|User newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|User query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\User newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\User newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\User query()
  * @mixin \Eloquent
  */
 class User extends Authenticatable
