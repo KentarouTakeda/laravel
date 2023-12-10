@@ -28,15 +28,14 @@
         "browser-sync-webpack-plugin": "^2.3.0",
         "browser-sync": "^2.27.7",
         "husky": "^8.0",
-        "lint-staged": "^13.0.3",
-        "prettier": "^2.4.1",
-        "stylelint-config-prettier": "^9.0.3",
-        "stylelint-config-recommended-scss": "^8.0.0",
-        "stylelint-config-standard": "^28.0.0",
+        "lint-staged": "^15.2.0",
+        "prettier": "^3.1.0",
+        "stylelint-config-recommended-scss": "^13.1.0",
+        "stylelint-config-standard": "^34.0.0",
         "stylelint-order": "^6.0.0",
-        "stylelint-prettier": "^2.0.0",
-        "stylelint-scss": "^4.0.0",
-        "stylelint": "^14.1.0"
+        "stylelint-prettier": "^4.1.0",
+        "stylelint-scss": "^5.3.1",
+        "stylelint": "^15.11.0"
     },
     "lint-staged": {
         "app/**/*.php": "npm run fix:php",
