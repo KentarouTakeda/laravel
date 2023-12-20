@@ -10,21 +10,21 @@
   "[css]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": true
+      "source.fixAll.stylelint": "explicit"
     }
   },
   "scss.validate": false,
   "[scss]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": true
+      "source.fixAll.stylelint": "explicit"
     }
   },
   "postcss.validate": false,
   "[postcss]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": true
+      "source.fixAll.stylelint": "explicit"
     }
   },
   "stylelint.validate": ["css", "scss", "postcss"],
