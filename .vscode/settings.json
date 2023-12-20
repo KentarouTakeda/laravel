@@ -28,7 +28,7 @@
     }
   },
   "stylelint.validate": ["css", "scss", "postcss"],
-  "intelephense.environment.phpVersion": "8.2.0",
+  "intelephense.environment.phpVersion": "8.3.0",
   "intelephense.files.exclude": [
     "**/.git/**",
     "**/.svn/**",
