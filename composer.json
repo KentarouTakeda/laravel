@@ -14,7 +14,7 @@
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.4",
         "barryvdh/laravel-debugbar": "^3.5",
-        "barryvdh/laravel-ide-helper": "^2.8",
+        "barryvdh/laravel-ide-helper": "^3.0",
         "beyondcode/laravel-dump-server": "^1.8",
         "brianium/paratest": "^7.0",
         "fakerphp/faker": "^1.9.1",
