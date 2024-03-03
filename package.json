@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "prepare": "husky install 2>/dev/null || true",
+        "prepare": "husky 2>/dev/null || true",
         "build": "vite build",
         "dev": "vite",
         "fix": "run-p fix:*",
@@ -27,7 +27,7 @@
         "blade-formatter": "^1.13.0",
         "browser-sync-webpack-plugin": "^2.3.0",
         "browser-sync": "^2.27.7",
-        "husky": "^8.0",
+        "husky": "^9.0.11",
         "lint-staged": "^15.2.0",
         "prettier": "^3.1.0",
         "stylelint-config-recommended-scss": "^14.0.0",
