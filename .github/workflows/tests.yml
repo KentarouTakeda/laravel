@@ -54,7 +54,7 @@ jobs:
       - run: ./artisan event:cache
       - run: ./artisan view:cache
       - name: setup Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
       - run: npm install --production
