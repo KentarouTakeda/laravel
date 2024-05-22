@@ -1,3 +1,7 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - vendor/phpstan/phpstan-mockery/extension.neon
+
 parameters:
   mixinExcludeClasses:
     - Eloquent
@@ -30,4 +34,3 @@ parameters:
     - '#expects Symfony\\Component\\HttpFoundation\\Response, Illuminate\\Http\\Response given#'
 
   reportUnmatchedIgnoredErrors: false
-  checkMissingIterableValueType: false
