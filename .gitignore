@@ -10,6 +10,7 @@
 .env.production
 .envrc
 .envrc.*
+.phpactor.json
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
