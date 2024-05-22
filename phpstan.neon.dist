@@ -34,4 +34,3 @@ parameters:
     - '#expects Symfony\\Component\\HttpFoundation\\Response, Illuminate\\Http\\Response given#'
 
   reportUnmatchedIgnoredErrors: false
-  checkMissingIterableValueType: false
