@@ -12,6 +12,10 @@ return (new PhpCsFixer\Config())
         'phpdoc_no_alias_tag' => false,
         'phpdoc_to_comment' => false,
         'no_trailing_whitespace_in_comment' => false,
+        'fully_qualified_strict_types' => [
+            'import_symbols' => true,
+            'phpdoc_tags' => [], // For Laravel IDE Helper
+        ],
     ])
     ->setFinder(PhpCsFixer\Finder::create()
         ->in(__DIR__.'/app')
