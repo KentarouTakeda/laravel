@@ -1,5 +1,0 @@
-{
-    "require": {
-        "spatie/phpunit-watcher": "^1.23"
-    }
-}
