@@ -11,6 +11,7 @@ return (new PhpCsFixer\Config())
         'phpdoc_separation' => false,
         'phpdoc_no_alias_tag' => false,
         'phpdoc_to_comment' => false,
+        'phpdoc_trim' => false, // For Laravel IDE Helper
         'no_trailing_whitespace_in_comment' => false,
         'fully_qualified_strict_types' => [
             'import_symbols' => true,
