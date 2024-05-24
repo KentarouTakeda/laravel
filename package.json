@@ -8,7 +8,7 @@
         "dev": "vite",
         "fix": "run-p fix:*",
         "fix:css": "stylelint --fix 'resources/css/**/*'",
-        "fix:php": "php-cs-fixer fix --config=.php-cs-fixer.php --path-mode=intersection --",
+        "fix:php": "php-cs-fixer fix",
         "fix:js": "prettier --write '**/*.js'",
         "fix:blade": "blade-formatter --w resources/views/**/*.blade.php --wrap 9999 -i 2"
     },
@@ -33,8 +33,8 @@
         "stylelint-scss": "^6.0.0"
     },
     "lint-staged": {
-        "app/**/*.php": "npm run fix:php",
-        "tests/**/*.php": "npm run fix:php",
+        "app/**/*.php": "php-cs-fixer fix --config=.php-cs-fixer.php --path-mode=intersection --",
+        "tests/**/*.php": "php-cs-fixer fix --config=.php-cs-fixer.php --path-mode=intersection --",
         "resources/css/**/*.scss": "stylelint --fix",
         "resources/views/**/*.blade.php": "blade-formatter --w --wrap 9999 -i 2"
     },
