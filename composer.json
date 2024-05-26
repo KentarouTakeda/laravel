@@ -65,10 +65,6 @@
         ]
     },
     "extra": {
-        "bamarni-bin": {
-            "bin-links": true,
-            "forward-command": true
-        },
         "laravel": {
             "dont-discover": [
                 "barryvdh/laravel-debugbar"
