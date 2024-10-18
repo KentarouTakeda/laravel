@@ -9,6 +9,13 @@
         "stylelint-prettier/recommended"
     ],
     "rules": {
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": [
+          true,
+          {
+            "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
+          }
+        ],
         "prettier/prettier": true,
         "order/properties-alphabetical-order": true,
         "no-empty-source": null,
