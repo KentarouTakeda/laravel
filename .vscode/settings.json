@@ -6,22 +6,17 @@
     "**/node_modules/**": true,
     "**/vendor/**": true
   },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "css.validate": false,
-  "[css]": {
-    "editor.formatOnSave": false,
+  "[tailwindcss]": {
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": "explicit"
     }
   },
-  "scss.validate": false,
   "[scss]": {
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": "explicit"
-    }
-  },
-  "postcss.validate": false,
-  "[postcss]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": "explicit"
@@ -31,12 +26,7 @@
   "intelephense.environment.phpVersion": "8.3.0",
   "intelephense.files.exclude": [
     "**/.git/**",
-    "**/.svn/**",
-    "**/.hg/**",
-    "**/CVS/**",
-    "**/.DS_Store/**",
     "**/node_modules/**",
-    "**/bower_components/**",
     "**/vendor/**/{Tests,tests}/**",
     "**/.history/**",
     "**/vendor/**/vendor/**",
@@ -44,10 +34,11 @@
     "/storage/**"
   ],
   "diffEditor.ignoreTrimWhitespace": false,
-  "php-cs-fixer.allowRisky": false,
+  "php-cs-fixer.allowRisky": true,
   "php-cs-fixer.lastDownload": 0,
   "php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
   "[php]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
   },
   "php-cs-fixer.onsave": true,
