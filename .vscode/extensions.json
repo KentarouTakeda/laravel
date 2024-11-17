@@ -1,9 +1,10 @@
 {
     "recommendations": [
-        "stylelint.vscode-stylelint",
-        "junstyle.php-cs-fixer",
         "bmewburn.vscode-intelephense-client",
-        "EditorConfig.EditorConfig",
-        "onecentlin.laravel-blade"
+        "editorconfig.editorconfig",
+        "junstyle.php-cs-fixer",
+        "onecentlin.laravel-blade",
+        "recca0120.vscode-phpunit",
+        "stylelint.vscode-stylelint"
     ]
 }
