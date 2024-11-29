@@ -59,7 +59,26 @@ commit / checkout / merge 等の操作が行われた場合git-hookにより自�
 
 ## オリジナルからの変更点
 
-* `public` ストレージの公開URIが `storage` から `public` へ変更されています。
+### `storage:link` の動作
+
+| 設定 | オリジナル | 変更 |
+| - | - | - |
+| 公開URI | `storage` | **`public`** |
+| リンク先 | `storage/app/public` | **`storage/app/private/public`** |
+
+この変更により:
+
+* `FILESYSTEM_DISK` のデフォルト値である `local` ドライバに対し、
+* `/public/*` へファイルを保存することで、
+* 公開URI `/public/*` へ環境を問わず公開される。
+
+以上の動作になります。
+
+* アプリケーションは `default` ドライバのみ扱うことを想定
+* Webへ公開するファイルは `/public/*` へ保存
+* `default` に設定された実際のドライバに応じて:
+  * `local`: `storage/app/private/public` が `storage:link` 経由で **`/public/*` として公開される**
+  * `s3`: CDNで `/public/*` のオリジンを `AWS_BUCKET` とすることで **`/public/*` として公開される**
 
 ---
 
