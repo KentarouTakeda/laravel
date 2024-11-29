@@ -13,9 +13,6 @@ parameters:
     - _ide_helper.php
   excludePaths:
     - vendor
-    - app/Http/Middleware/TrustProxies.php
-    - app/Providers/RouteServiceProvider.php
-    - app/Http/Middleware/Authenticate.php
   ignoreErrors:
     -
       message: '#has no return type(hint)? specified#'
