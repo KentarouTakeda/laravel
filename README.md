@@ -40,7 +40,7 @@
 
 * `composer coverage` でカバレッジレポートを生成できます。
   * 結果は *public/docs/coverage/* へ出力されます。
-* 実行には [PCOV](https://github.com/krakjoe/pcov) が必要です。
+* 実行には [Xdebug](https://xdebug.org/) が必要です。
 
 ### [husky](https://github.com/typicode/husky) / [run-if-changed](https://www.npmjs.com/package/run-if-changed) によるGitフック
 

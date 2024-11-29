@@ -43,7 +43,7 @@
     },
     "scripts": {
         "test": "@php artisan test -p",
-        "coverage": "@php -d pcov.enabled vendor/bin/phpunit --coverage-html public/docs/coverage tests",
+        "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html public/docs/coverage tests",
         "phpstan": "phpstan analyze",
         "watch": "phpunit-watcher watch",
         "post-autoload-dump": [
