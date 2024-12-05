@@ -42,6 +42,6 @@
         "app/View/Components/**/*.php": "./artisan view:clear",
         "package-lock.json": "npm install --prefer-offline --no-audit",
         "composer.lock": "composer install",
-        "resources/@(css|js)/**.*": "npm run build"
+        "resources/@(css|js|views)/**.*": "npm run build"
     }
 }
