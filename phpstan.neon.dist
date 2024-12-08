@@ -5,7 +5,7 @@ includes:
 parameters:
   mixinExcludeClasses:
     - Eloquent
-  level: 6
+  level: 8
   paths:
     - app
     - tests
