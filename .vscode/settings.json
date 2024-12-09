@@ -10,6 +10,9 @@
     "*.css": "tailwindcss"
   },
   "css.validate": false,
+  "phpunit.environment": {
+    "XDEBUG_MODE": "debug"
+  },
   "[tailwindcss]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
