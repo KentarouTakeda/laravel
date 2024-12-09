@@ -44,6 +44,7 @@ jobs:
 
       ##
 
+      - run: composer dump-autoload --strict-psr
       - run: ./artisan ide-helper:generate
       - run: vendor/bin/phpstan
       - run: DB_CONNECTION=sqlite ./artisan migrate --force
