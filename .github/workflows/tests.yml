@@ -40,13 +40,13 @@ jobs:
         run: php artisan key:generate
 
       - name: Execute tests
-        run: ./artisan test -p -v
+        run: ./artisan test -p --no-progress
 
       ##
 
       - run: composer dump-autoload --strict-psr
       - run: ./artisan ide-helper:generate
-      - run: vendor/bin/phpstan
+      - run: vendor/bin/phpstan analyze --no-progress --ansi
       - run: DB_CONNECTION=sqlite ./artisan migrate --force
       - run: DB_CONNECTION=sqlite ./artisan model:prune
       - run: ./artisan config:cache
@@ -58,5 +58,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-      - run: npm install
+      - run: npm install --ignore-script --prefer-offline
       - run: npm run build
