@@ -25,6 +25,10 @@
       "source.fixAll.stylelint": "explicit"
     }
   },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true
+  },
   "stylelint.validate": ["css", "scss", "postcss"],
   "intelephense.environment.phpVersion": "8.4.0",
   "intelephense.files.exclude": [

@@ -1,0 +1,8 @@
+{
+    "componentPrefix": ["x-", "livewire:"],
+    "indentSize": 2,
+    "noMultipleEmptyLines": true,
+    "sortTailwindcssClasses": true,
+    "wrapAttributes": "force-expand-multiline",
+    "wrapAttributesMinAttrs": 5
+}

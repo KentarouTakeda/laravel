@@ -5,6 +5,7 @@
         "junstyle.php-cs-fixer",
         "onecentlin.laravel-blade",
         "recca0120.vscode-phpunit",
+        "shufo.vscode-blade-formatter",
         "stylelint.vscode-stylelint",
         "xdebug.php-debug"
     ]

@@ -9,7 +9,7 @@
         "fix:css": "stylelint --fix 'resources/css/**/*'",
         "fix:php": "php-cs-fixer fix",
         "fix:js": "prettier --write '**/*.js'",
-        "fix:blade": "blade-formatter --w resources/views/**/*.blade.php --wrap 9999 -i 2"
+        "fix:blade": "blade-formatter --w resources/views/**/*.blade.php"
     },
     "dependencies": {
         "autoprefixer": "^10.4.20",
@@ -36,7 +36,7 @@
         "app/**/*.php": "php-cs-fixer fix --config=.php-cs-fixer.php --path-mode=intersection --",
         "tests/**/*.php": "php-cs-fixer fix --config=.php-cs-fixer.php --path-mode=intersection --",
         "resources/css/**/*.css": "stylelint --fix",
-        "resources/views/**/*.blade.php": "blade-formatter --w --wrap 9999 -i 2"
+        "resources/views/**/*.blade.php": "blade-formatter --w"
     },
     "run-if-changed": {
         "app/View/Components/**/*.php": "./artisan view:clear",
