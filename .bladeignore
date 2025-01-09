@@ -1,2 +1,2 @@
-resources/views/email/**
+resources/views/emails/**
 resources/views/welcome.blade.php
