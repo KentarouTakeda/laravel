@@ -1,6 +1,7 @@
 {
   "files.watcherExclude": {
     "bootstrap/cache": true,
+    "storage": true,
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
@@ -50,5 +51,9 @@
   },
   "php-cs-fixer.onsave": true,
   "php.suggest.basic": false,
-  "php.validate.enable": false
+  "php.validate.enable": false,
+  "search.exclude": {
+    "bootstrap/cache": true,
+    "storage": true
+  }
 }
