@@ -48,7 +48,8 @@
         "watch": "phpunit-watcher watch",
         "post-autoload-dump": [
             "chmod -R ugo+w storage bootstrap/cache 2>/dev/null || true",
-            "[ -e  public/public ] || ./artisan storage:link",
+            "rm -f bootstrap/cache/*",
+            "./artisan storage:unlink && ./artisan storage:link",
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
             "[ ! -e vendor/barryvdh/laravel-ide-helper ] || (./artisan config:clear && ./artisan ide-helper:generate && ./artisan ide-helper:meta)"
