@@ -8,9 +8,10 @@
     ],
     "rules": {
         "at-rule-no-unknown": null,
-        "prettier/prettier": true,
-        "order/properties-alphabetical-order": true,
+        "color-hex-length": "long",
+        "import-notation": null,
         "no-empty-source": null,
-        "color-hex-length": "long"
+        "order/properties-alphabetical-order": true,
+        "prettier/prettier": true
     }
 }
