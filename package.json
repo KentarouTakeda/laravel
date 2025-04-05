@@ -18,7 +18,7 @@
         "laravel-vite-plugin": "^1.2.0",
         "npm-run-all": "^4.1.5",
         "tailwindcss": "^4.0.0",
-        "vite": "^6.0.11"
+        "vite": "^6.2.4"
     },
     "devDependencies": {
         "@hkdobrev/run-if-changed": "^0.6.1",
