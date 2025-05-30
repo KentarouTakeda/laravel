@@ -42,7 +42,6 @@
         }
     },
     "scripts": {
-        "test": "@php artisan test -p",
         "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html public/docs/coverage tests",
         "phpstan": "phpstan analyze",
         "watch": "phpunit-watcher watch",
@@ -71,7 +70,7 @@
         ],
         "test": [
             "@php artisan config:clear --ansi",
-            "@php artisan test"
+            "@php artisan test -p"
         ]
     },
     "extra": {
