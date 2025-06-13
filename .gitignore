@@ -24,9 +24,7 @@
 .envrc.*
 Homestead.json
 Homestead.yaml
-npm-debug.log
 Thumbs.db
-yarn-error.log
 
 /_ide_helper.php
 /_ide_helper_models.php
