@@ -25,10 +25,10 @@
         "@hkdobrev/run-if-changed": "^0.6.1",
         "blade-formatter": "^1.13.0",
         "husky": "^9.0.11",
-        "lint-staged": "^15.2.0",
+        "lint-staged": "^16.0.0",
         "prettier": "^3.1.0",
         "stylelint": "^16.0.2",
-        "stylelint-config-standard": "^38.0.0",
+        "stylelint-config-standard": "^39.0.0",
         "stylelint-order": "^7.0.0",
         "stylelint-prettier": "^5.0.0"
     },
