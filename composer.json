@@ -42,9 +42,22 @@
         }
     },
     "scripts": {
-        "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html public/docs/coverage tests",
-        "phpstan": "phpstan analyze",
-        "watch": "phpunit-watcher watch",
+        "setup": [
+            "composer install",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan key:generate",
+            "@php artisan migrate --force",
+            "npm install",
+            "npm run build"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+        ],
+        "test": [
+            "@php artisan config:clear --ansi",
+            "@php artisan test -p"
+        ],
         "post-autoload-dump": [
             "chmod -R ugo+w storage bootstrap/cache 2>/dev/null || true",
             "rm -f bootstrap/cache/*",
@@ -64,14 +77,12 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
         ],
-        "dev": [
-            "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+        "pre-package-uninstall": [
+            "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
         ],
-        "test": [
-            "@php artisan config:clear --ansi",
-            "@php artisan test -p"
-        ]
+        "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html public/docs/coverage tests",
+        "phpstan": "phpstan analyze",
+        "watch": "phpunit-watcher watch"
     },
     "extra": {
         "laravel": {
