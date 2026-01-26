@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Barryvdh\Debugbar\ServiceProvider as DebugbarServiceProvider;
+use Fruitcake\LaravelDebugbar\ServiceProvider as DebugbarServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
