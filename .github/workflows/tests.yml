@@ -17,7 +17,7 @@ jobs:
       fail-fast: true
       matrix:
         node: [18, 20, 22]
-        php: [8.2, 8.3, 8.4]
+        php: [8.2, 8.3, 8.4, 8.5]
         os:
           - "ubuntu-22.04"
 
