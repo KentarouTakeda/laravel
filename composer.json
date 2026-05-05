@@ -27,7 +27,7 @@
         "phpstan/phpstan": "^2.0",
         "phpstan/phpstan-mockery": "^2.0",
         "phpunit/php-code-coverage": "^11.0",
-        "phpunit/phpunit": "^11.5.3",
+        "phpunit/phpunit": "^11.5.50",
         "spatie/phpunit-watcher": "^1.24"
     },
     "autoload": {
