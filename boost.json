@@ -1,18 +1,26 @@
 {
     "agents": [
-        "copilot",
+        "amp",
+        "claude_code",
         "codex",
+        "copilot",
         "cursor",
         "gemini",
         "junie",
-        "opencode",
-        "claude_code"
+        "kiro",
+        "opencode"
     ],
+    "cloud": false,
     "guidelines": true,
-    "herd_mcp": false,
     "mcp": true,
+    "nightwatch": false,
+    "packages": [
+        "barryvdh/laravel-debugbar"
+    ],
     "sail": false,
     "skills": [
-        "tailwindcss-development"
+        "laravel-best-practices",
+        "tailwindcss-development",
+        "debug-using-debugbar"
     ]
 }
